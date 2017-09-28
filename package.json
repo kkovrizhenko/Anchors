@@ -1,19 +1,16 @@
 {
-  "name": "package",
+  "name": "octavia",
   "version": "1.0.0",
-  "description": "test",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kkovrizhenko/Anchors.git"
-  },
-  "author": "kkovrizhenko",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kkovrizhenko/Anchors/issues"
-  },
-  "homepage": "https://github.com/kkovrizhenko/Anchors#readme"
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^1.2.0",
+    "gulp-imagemin": "^3.3.0"
+  }
 }
