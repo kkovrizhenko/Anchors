@@ -4,7 +4,7 @@ const imagemin = require('gulp-imagemin');
  
 gulp.task('template', function() {
 	// які файли читати
-	gulp.src('./template/index.html')
+	gulp.src('./templates/index.html')
 		.pipe(fileinclude({
 			prefix: '@@',
 			basepath: '@file'
