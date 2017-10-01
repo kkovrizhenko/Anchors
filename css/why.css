@@ -28,26 +28,24 @@
 }
 
 .why-container {
-	padding-top: 6%;
+	padding: 75px 0 0 0;
 }
-
+.blocks{
+	padding: 0 100px 75px 100px;
+}
 .section-text {
-	margin: 0 25%;
+	margin: 0 20%;
 	text-align: center;
 }
 
-.blocks {
-	margin: 0 10%;
-	padding-bottom: 5%;
-}
 .blocks a {
 	vertical-align: top;
-	width: 15%;
 	margin: 3% 3%;
-    padding: 5px 15px 3px 15px;
+    padding: 5px 15px;
     display: inline-block;
     font-size: 16px;
     min-width: 120px;
+	width: 15%;
 }
 
 .blocks a:hover {
@@ -148,3 +146,31 @@ p{
 a{
 	text-decoration: none;
 }
+
+
+@media only screen and (max-width : 767px) {
+
+.blocks{
+	padding: 0 0 75px 0;
+}
+
+}	
+
+
+@media only screen and (max-width : 600px) {
+
+.section-text{
+	margin: 0;
+}
+
+}
+
+@media only screen and (max-width : 340px) {
+
+.blocks a{
+  margin: 0 10%;
+	width: 80%;
+  padding: 25px 15px;
+}
+
+}		

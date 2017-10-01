@@ -134,12 +134,6 @@ a:hover,  a:active, a:focus{
     outline: none;
 }
 
-@media only screen and (max-width : 767px) {
-	.main-container{
-		padding: 0;
-	}
-}
-
 
 
 
