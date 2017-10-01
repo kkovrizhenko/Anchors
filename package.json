@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-file-include": "^1.2.0",
     "gulp-imagemin": "^3.3.0"
   }
