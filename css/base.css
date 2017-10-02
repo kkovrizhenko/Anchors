@@ -1,0 +1,168 @@
+@font-face {
+	font-family:'Proxima Nova Regular';
+	src: url('../fonts/Proxima Nova Regular.eot'),
+	url('../fonts/Proxima Nova Regular.woff') format('woff'),
+	url('../fonts/Proxima Nova Regular.ttf') format('truetype'),
+	url('../fonts/Proxima Nova Regular.svg') format('svg');
+}
+
+body{
+	font-family: "Proxima Nova Regular";
+}
+* {
+	box-sizing: border-box;
+}
+.main-container{
+	max-width: 1400px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.row::after{
+	content: '';
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+/* icons style */
+.icon{
+	display: inline-block;
+	vertical-align: top;
+}
+.arrow-right-black__icon::after{
+	content: url('../pic/arrow-black__right.png');
+}
+.male-user__icon::before{
+	content: url('../pic/male-user.png');
+}
+.heart__icon::before{
+	content: url('../pic/heart.png');
+} 
+.wallet__icon::before{
+	content: url('../pic/wallet.png');
+}
+.inst__icon::before{
+	content: url('../pic/instagram-64.png');
+}
+.twitter__icon::before{
+	content: url('../pic/twitter-64.png');
+} 
+.facebook__icon::before{
+	content: url('../pic/facebook-64.png');
+}
+.icon-clean-code::before {
+	content: url('../pic/monitor-big.png');
+}
+.icon-magic-feature::before {
+	content: url('../pic/magic-wand.png');
+}
+.icon-design::before {
+	content: url('../pic/rocket.png')
+}
+.icon-globe::before {
+	content: url('../pic/globe-2.png')
+}
+.icon-settings::before {
+	content: url('../pic/settings.png')
+}
+.icon-modular::before{
+	content: url('../pic/layers.png');
+}
+.icon-editable::before{
+	content: url('../pic/wrench.png');
+}
+.icon-note::before{
+	content: url('../pic/note.png');
+}
+
+/* buttons style */
+.btn__link{
+	position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    -webkit-transition: .4s ease-out;
+    -moz-transition: .4s ease-out;
+    -o-transition: .4s ease-out;
+    transition: .4s ease-out;
+}
+.btn__link::active{
+	outline: none;
+}
+.started__btn{
+	border: 3px solid #fff;
+	padding: 22px 88px 22px 59px;
+	background-color: #fff;
+	color: #28363d;
+}
+.started__btn:hover{
+	border: 3px solid #000;
+	background-color:rgba(255,255,255,0.75);
+}
+.started__btn::after{
+	content: url('../pic/arrow-blue__right.png');
+	position: absolute;
+	right: 49px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.subscribe__btn{
+	color: #fff;
+	border: 3px solid #fff;
+	padding: 22px 83px 21px 82px;
+}
+.subscribe__btn:hover{
+	color: #000;
+	border: 3px solid #000;
+	background-color:rgba(255,255,255,0.75);
+}
+
+
+.title, .sub-title{
+	position: relative;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+}
+.title{
+	font-size: 36px;
+}
+.sub-title{
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+.sub-title.decoration:after{
+	content: url('../pic/separator.png');
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);	
+}
+
+a{
+	text-decoration: none;
+}
+a:hover,  a:active, a:focus{
+    outline: none;
+}
+
+@media only screen and (max-width : 767px) {
+	.main-container{
+		padding: 0;
+	}
+}
+
+
+
+
