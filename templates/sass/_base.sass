@@ -1,0 +1,74 @@
+
+*
+	box-sizing: border-box
+
+a 
+	text-decoration: none
+	&:hover
+		outline: none
+	&:active
+		outline: none
+	&:focus
+		outline: none		
+	
+.main-container
+	max-width: 1400px
+	padding: 0 15px
+	margin: 0 auto
+
+
+.btn__link
+	position: relative
+	display: inline-block
+	font-size: 14px
+	font-weight: 600
+	text-transform: uppercase
+	border-radius: 10px
+	border-style: none
+	cursor: pointer
+	text-decoration: inherit
+	transition: .4s ease-out
+	
+	&::active
+		outline: none
+		text-decoration: none
+	
+
+.started__btn
+	border: 3px solid #fff
+	padding: 22px 88px 22px 59px
+	background-color: $white-bg
+	color: $dark-color
+	
+	&::after
+		content: url('../pic/arrow-blue__right.png')
+		position: absolute
+		right: 50px
+		top: 50%
+		transform: translateY(-50%)
+
+.subscribe__btn
+	color: $white-color
+	background-color: transparent
+	border: 3px solid #fff
+	padding: 22px 83px 21px 82px
+
+.title, .sub-title
+	position: relative
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+
+.title
+	font-size: 36px
+
+.sub-title
+	font-size: 24px
+	margin: 0 0 60px;
+
+.sub-title.decoration::after
+	content: url('../pic/separator.png');
+	position: absolute
+	bottom: -30px
+	left: 50%
+	transform: translateX(-50%)

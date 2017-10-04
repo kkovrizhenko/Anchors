@@ -1,0 +1,7 @@
+@font-face {
+	font-family: "proxima";
+	src: url("fonts/Proxima Nova Regular.eot?") format("eot"),
+		 url("fonts/Proxima Nova Regular.woff") format("woff"),
+		 url("fonts/Proxima Nova Regular.ttf") format("truetype"),
+		 url("fonts/Proxima Nova Regular.svg") format("svg");
+}
