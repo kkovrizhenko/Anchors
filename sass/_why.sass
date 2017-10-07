@@ -26,12 +26,19 @@
 .why-container
 	padding: 75px 15px 0 15px
 
+	span
+		color: $blue-color
+
 .blocks
 	padding: 0 100px 75px 100px
 
 .section-text
 	margin: 0 20%
 	text-align: center
+	color: $grey-color
+
+	+media(600)
+		margin: 0
 
 .blocks
 	a
@@ -46,11 +53,23 @@
 			opacity: 0.6
 	h3
 		margin: 15px 0
+		color: $dark-color
+	h4
+		color: $grey-color
 
+	+media(767)
+		padding: 0 0 75px 0
+
+	+media(340)
+		margin: 0 10%
+		width: 80%
+		padding: 25px 15px
 
 .get-started
 	width: 100%
 	text-align: center
+	background-color: $dark-bg
+
 	.started__btn
 		margin-bottom: 40px
 	h3
@@ -58,6 +77,10 @@
 		line-height: 44px
 		font-weight: 400
 		padding: 3%
+		color: $white-color
+	span 
+		color: $blue-color
+
 
 .get-started-title
 	text-transform: none
