@@ -32,4 +32,96 @@
 		width: 33.3333333%
 		float: left
 		text-align: center			
+		&:nth-child(2n+1)
+			background-color: #1e292f;
 
+.count__strong
+	font-size: 30px
+	color: $white-color
+	font-weight: 700
+	line-height: 34px
+	text-transform: uppercase
+
+.count__descr
+	font-size: 14px
+	color: $grey-color
+	font-weight: 700
+	line-height: 36px
+	text-transform: uppercase
+
+.footer__about
+	position: relative
+	padding: 95px 0 125px 0
+	background-size: cover
+	background-position: 50% 50%
+	.sub-title
+		color: $white-color
+	p
+		color: #1e292f
+		font-size: 18px
+		font-weight: 400
+		line-height: 36px
+		font-style: italic
+		width: 50%
+		margin: 0 auto
+		text-align: center
+	.content
+		position: relative
+		z-index: 2
+	h3
+		font-size: 24px
+		font-weight: 700
+		line-height: 36px
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 75px
+
+.navigation
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: 15px
+	right: 15px
+	z-index: 2
+
+.btn__prev, .btn__next
+	width: 40px
+	height: 40px
+	background-size: 34px
+	background-position: center
+	background-repeat: no-repeat
+	position: absolute
+	z-index: 2
+	top: 0
+	cursor: pointer
+
+.btn__prev
+	background-image: url('../pic/right11.png')
+	left: 0px
+.btn__next
+	background-image: url('../pic/arrow-black__right.png')
+	right: 0px	
+
+
+.footer__contact
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	padding: 60px 0 70px 0
+	background-color: $dark-bg
+	color: $white-color	
+	&-col
+		float: left
+		width: 33.333333%
+		font-size: 16px
+	h2:after
+		content: url('../pic/separator.png')
+		position: absolute
+		top: 25px
+		left: 0
+			
+.contact__descr
+	font-size: 14px
+	font-weight: 400
+	line-height: 24px
+		
