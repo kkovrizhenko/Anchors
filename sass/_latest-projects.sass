@@ -1,3 +1,4 @@
+
 .clearfix::after 
 	content: ''
 	display: block
@@ -6,7 +7,6 @@
 
 .row-latest-projects 
 	position: relative
-
 
 .image-box 
 	width: 50%
@@ -31,7 +31,6 @@
 		right: 0
 		background: url('../img/image-right.png')
 	
-
 .text-box 
 	width: 50%
 	float: right
@@ -54,12 +53,10 @@
 		padding: 5% 5% 0
 		background: rgba(255, 255, 255, 0.7)	
 	
-
 	.button-link 
 		+media(1280) 
 			text-align: center
 			margin-bottom: 8%
-		
 	
 	&-2 
 		float: left
@@ -67,8 +64,7 @@
 		padding-right: 7.14%
 
 		+media(1440) 
-			padding-left: 0
-		
+			padding-left: 0	
 
 .project 
 	&-container 
@@ -85,12 +81,10 @@
 			margin-bottom: 10px
 			padding: 0
 		
-
 		&-2 
 			+media(979) 
 				background: url('../img/image-right.png')
 			
-		
 	&-paragraph 
 		color: #8198a0
 		font-size: 18px
@@ -101,7 +95,6 @@
 			font-size: 15px
 			line-height: 30px
 		
-
 		&-box 
 			text-align: left
 			padding-top: 4.28%
@@ -120,14 +113,11 @@
 			text-align: center
 			margin: 0 auto
 			max-width: 590px
-		
-	
 
 	&-list 
 		font-size: 0
 		margin: 0 -0.714%
 	
-
 	&-item 
 		display: inline-block
 		width: 48.57%
@@ -139,15 +129,12 @@
 			margin: 0 0 1.5%
 			text-align: center
 		
-
 		img 
 			width: 100%
 		
-
 		&:hover .item-info 
 			display: block
 		
-
 .latest-projects-list 
 	color: #28363d
 	font-size: 15px
@@ -155,32 +142,26 @@
 	text-transform: uppercase
 	white-space: nowrap
 
-
 .icon 
+	display: inline-block
 	vertical-align: middle
  	margin-right: 20px
 
- 	&-box 
- 		display: inline-block
+	&-box 
  		width: 50%
  	
-
 
 .icon-monitor::before 
 	content: url('../pic/monitor.png') 
 
-
 .icon-tablet::before 
 	content: url('../pic/tablet.png')
-
 
 .icon-crop::before 
 	content: url('../pic/crop.png')
 
-
 .icon-documents::before 
 	content: url('../pic/documents.png')
-
 
 .button-link 
 	margin-bottom: 10%
@@ -192,8 +173,6 @@
 	    width: 200px
 		height: 50px
 	
-
-
 .find_more 
 	padding: 17px 45px 17px 35px
 
@@ -206,12 +185,9 @@
 		top: 50%
 		transform: translateY(-50%)
 	
-
 	&:hover 
 		background-color: #2eb8b8
 	
-
-
 .our_lates_projects 
 	max-width: 1400px
 	margin: 0 auto
@@ -219,21 +195,18 @@
 	max-height: 400px
     overflow: auto
 
-    +media(979) 
+	+media(979) 
 		margin: 0 auto
 		max-width: 270px
 	
-
 	+media(480) 
 		max-height: 400px
 		overflow: auto
 	
-
 	.sub-title 
 		+media(979) 
 			font-size: 21px
 		
-	
 .exclusive_branding 
 	color: #23363d
 	font-size: 18px
@@ -246,7 +219,6 @@
 	+media(979) 
 		font-size: 15px
 	
-
 	&::after 
 		content: ''
 		background: url('../pic/separator.png')
@@ -257,7 +229,6 @@
 		left: 50%
 		margin-left: -15.5px
 	
-
 .date 
 	color: #28363d
 	font-size: 16px
@@ -269,12 +240,10 @@
 	+media(979) 
 		font-size: 14px
 	
-
 .gallery 
 	padding: 6% 15px 15px
 	max-width: 1400px
 	margin: 0 auto
-
 
 .item-info 
 	position: absolute
@@ -285,7 +254,6 @@
 	background-color: #ffffff
 	opacity: 0.92
 	margin: 15px
-
 
 .item-in 
 	position: absolute
@@ -300,22 +268,15 @@
 	justify-content: center
 	overflow: hidden
 
-
 .sub-title 
 	margin-bottom: 35px
 
 	.decoration:after 
 		top: 110%
-	
 
 .icon-box 
 	+media(1280) 
 		width: 100%
 	 	text-align: center
 	 	margin-bottom: 5px
-	
-
-@mixin media($width) 
-	@media screen and (max-width: $width + "px") 
-		@content
 	
