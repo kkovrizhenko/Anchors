@@ -1,0 +1,321 @@
+.clearfix::after 
+	content: ''
+	display: block
+	overflow: hidden
+	clear: both
+
+.row-latest-projects 
+	position: relative
+
+
+.image-box 
+	width: 50%
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 50%
+	background: url('../img/image-left.png')
+	background-size: cover
+	background-position: 50% 0
+
+	+media(979) 
+		display: none
+		position: static
+		width: 100%
+		min-height: 200px
+		max-height: 300px
+	
+	&-2 
+		left: 50%
+		right: 0
+		background: url('../img/image-right.png')
+	
+
+.text-box 
+	width: 50%
+	float: right
+	padding: 8.21% 15px 0 7.14%
+	font-size: 0
+
+	@extend .clearfix
+
+	+media(1440) 
+		padding: 8.21% 0 0 7.14%
+	
+
+	+media(1280) 
+		padding-top: 2%
+	
+
+	+media(979) 
+		float: none
+		width: 100%
+		padding: 5% 5% 0
+		background: rgba(255, 255, 255, 0.7)	
+	
+
+	.button-link 
+		+media(1280) 
+			text-align: center
+			margin-bottom: 8%
+		
+	
+	&-2 
+		float: left
+		padding-left: 15px
+		padding-right: 7.14%
+
+		+media(1440) 
+			padding-left: 0
+		
+
+.project 
+	&-container 
+		max-width: 1400px
+		margin: 0 auto
+		padding: 0 15px
+		
+		@extend .clearfix
+
+		+media(979) 
+			background: url('../img/image-left.png')
+			background-size: cover
+			background-position: 50% 0
+			margin-bottom: 10px
+			padding: 0
+		
+
+		&-2 
+			+media(979) 
+				background: url('../img/image-right.png')
+			
+		
+	&-paragraph 
+		color: #8198a0
+		font-size: 18px
+		font-weight: 400
+		line-height: 36px
+
+		+media(979) 
+			font-size: 15px
+			line-height: 30px
+		
+
+		&-box 
+			text-align: left
+			padding-top: 4.28%
+			padding-bottom: 10%
+
+			+media(979) 
+				padding-bottom: 4.28%
+				text-align: center
+			
+
+			+media(480) 
+				max-height: 400px
+				overflow: auto
+
+		&-our 
+			text-align: center
+			margin: 0 auto
+			max-width: 590px
+		
+	
+
+	&-list 
+		font-size: 0
+		margin: 0 -0.714%
+	
+
+	&-item 
+		display: inline-block
+		width: 48.57%
+		margin: 0 0.714% 1.428%
+		position: relative
+
+		+media(979) 
+			width: 100%
+			margin: 0 0 1.5%
+			text-align: center
+		
+
+		img 
+			width: 100%
+		
+
+		&:hover .item-info 
+			display: block
+		
+
+.latest-projects-list 
+	color: #28363d
+	font-size: 15px
+	font-weight: 600
+	text-transform: uppercase
+	white-space: nowrap
+
+
+.icon 
+	vertical-align: middle
+ 	margin-right: 20px
+
+ 	&-box 
+ 		display: inline-block
+ 		width: 50%
+ 	
+
+
+.icon-monitor::before 
+	content: url('../pic/monitor.png') 
+
+
+.icon-tablet::before 
+	content: url('../pic/tablet.png')
+
+
+.icon-crop::before 
+	content: url('../pic/crop.png')
+
+
+.icon-documents::before 
+	content: url('../pic/documents.png')
+
+
+.button-link 
+	margin-bottom: 10%
+
+	.btn__link 
+		border: 2px solid #1ed6cb
+	    background-color: #1ed6cb
+	    color: #ffffff
+	    width: 200px
+		height: 50px
+	
+
+
+.find_more 
+	padding: 17px 45px 17px 35px
+
+	&::after 
+		content: url('../pic/arrow.png')
+		width: 8px
+		height: 12px
+		position: absolute
+		right: 25px
+		top: 50%
+		transform: translateY(-50%)
+	
+
+	&:hover 
+		background-color: #2eb8b8
+	
+
+
+.our_lates_projects 
+	max-width: 1400px
+	margin: 0 auto
+	padding: 6% 15px 0
+	max-height: 400px
+    overflow: auto
+
+    +media(979) 
+		margin: 0 auto
+		max-width: 270px
+	
+
+	+media(480) 
+		max-height: 400px
+		overflow: auto
+	
+
+	.sub-title 
+		+media(979) 
+			font-size: 21px
+		
+	
+.exclusive_branding 
+	color: #23363d
+	font-size: 18px
+	font-weight: 700
+	line-height: 36px
+	text-transform: uppercase
+	text-align: center
+	position: relative
+
+	+media(979) 
+		font-size: 15px
+	
+
+	&::after 
+		content: ''
+		background: url('../pic/separator.png')
+		width: 31px
+		height: 6px
+		position: absolute
+		top: 100%
+		left: 50%
+		margin-left: -15.5px
+	
+
+.date 
+	color: #28363d
+	font-size: 16px
+	font-weight: 600
+	line-height: 36px
+	text-align: center
+	padding-top: 3px
+
+	+media(979) 
+		font-size: 14px
+	
+
+.gallery 
+	padding: 6% 15px 15px
+	max-width: 1400px
+	margin: 0 auto
+
+
+.item-info 
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: #ffffff
+	opacity: 0.92
+	margin: 15px
+
+
+.item-in 
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	margin: 15px
+	border: 2px dotted #3ddcd2
+	display: flex
+	flex-direction: column
+	justify-content: center
+	overflow: hidden
+
+
+.sub-title 
+	margin-bottom: 35px
+
+	.decoration:after 
+		top: 110%
+	
+
+.icon-box 
+	+media(1280) 
+		width: 100%
+	 	text-align: center
+	 	margin-bottom: 5px
+	
+
+@mixin media($width) 
+	@media screen and (max-width: $width + "px") 
+		@content
+	
