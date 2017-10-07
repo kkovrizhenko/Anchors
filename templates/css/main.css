@@ -54,6 +54,12 @@ a {
   a:focus {
     outline: none; }
 
+.clearfix:after, .row:after {
+  content: '';
+  clear: both;
+  display: block;
+  overflow: hidden; }
+
 .main-container {
   max-width: 1400px;
   padding: 0 15px;
@@ -108,9 +114,9 @@ a {
 
 .sub-title {
   font-size: 24px;
-  margin: 0 0 60px; }
+  margin: 0 0 60px 0; }
 
-.subtitle.decoration::after {
+.sub-title.decoration::after {
   content: url("../pic/separator.png");
   position: absolute;
   bottom: -30px;

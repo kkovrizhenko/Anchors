@@ -5,6 +5,7 @@ var gulp 			= require('gulp'),
 	concat 			= require('gulp-concat'),
 	sass 			= require('gulp-sass'),
 	autoprefixer 	= require('gulp-autoprefixer'),
+	sourcemaps 		= require('gulp-sourcemaps'),
 	browserSync 	= require('browser-sync');
 
 gulp.task('template', function() {
@@ -21,6 +22,7 @@ gulp.task('sass', function(){
 	return gulp.src(['templates/sass/**/*.scss', 'templates/sass/**/*.sass'])
 	.pipe(sass())
 	.pipe(autoprefixer(['last 15 versions'], {cascade: true}))
+	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('./templates/css/'))
 	.pipe(browserSync.reload({stream: true}))
 });
