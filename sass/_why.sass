@@ -49,8 +49,14 @@
 		font-size: 16px
 		min-width: 120px
 		width: 15%
+
 		&:hover
 			opacity: 0.6
+
+		+media(340)
+			margin: 0 10%
+			width: 80%
+			padding: 25px 15px
 	h3
 		margin: 15px 0
 		color: $dark-color
@@ -58,12 +64,9 @@
 		color: $grey-color
 
 	+media(767)
-		padding: 0 0 75px 0
+		padding: 0 0 75px 10px
 
-	+media(340)
-		margin: 0 10%
-		width: 80%
-		padding: 25px 15px
+
 
 .get-started
 	width: 100%
