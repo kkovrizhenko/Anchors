@@ -11,6 +11,7 @@ var gulp 			= require('gulp'),
 	spritesmith 	= require('gulp.spritesmith'),
 	imagemin 		= require('gulp-imagemin'),
 	cache			= require('gulp-cache'),
+	ghPages 		= require('gulp-gh-pages'),
 	del 			= require('del');
 
 gulp.task('template', function() {
@@ -36,9 +37,7 @@ gulp.task('sass', function(){
 gulp.task('styles', function() {
 	return gulp.src('./css/*.css')
 	.pipe(concat('style.min.css'))
-	.pipe(minifyCSS({
-		keepBreaks: true
-	}))
+	.pipe(minifyCSS())
 	.pipe(gulp.dest('./css/'))
 	.pipe(browserSync.reload({stream: true}))
 });
@@ -101,6 +100,8 @@ gulp.task('build', ['clean', 'sass', 'template', 'imgmin'], function(){
 	var buildPic= gulp.src('./pic/**/*')
 		.pipe(gulp.dest('dist/pic'));	
 });
+
+gulp.task('deploy', () => gulp.src('./dist/**/*').pipe(ghPages()));
 
 // gulp.task('css', function() {
 //   return gulp.src(['./templates/css/reset.css', './templates/css/base.css', './templates/css/heder.css', './templates/css/why.css', './templates/css/latest-projects.css', 'templates/css/footer.css'])
