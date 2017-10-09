@@ -1,12 +1,19 @@
 .footer__separator
 	padding: 20px 0
 	background-color: $blue-bg
+	+media(979)
+       	padding: 50px 0
 
 	&-col-link
 		float: left
 		width: 50%
 		text-align: left
 		line-height: 60px
+		+media(979)
+       		width: 100%
+       		text-align: center
+       		padding-bottom: 50px
+       		line-height: 25px
 	
 	&-link
 		position: relative
@@ -14,27 +21,39 @@
 		font-size: 20px
 		text-transform: uppercase
 		.icon
-			margin: 5px 0px 0 70px		
+			margin: 5px 0px 0 70px
+			+media(1200)
+       			margin: 0 0 0 25px		
 	
 	&-col-buttons
 		float: left
 		width: 50%
 		text-align: right
-		
+		+media(979)
+       		width: 100%
+       		text-align: center	
 		.subscribe__btn
 			margin-right: 50px
+			+media(767)
+       			margin: 0 0 25px 0px		
 
 
 .footer__counter
 	background-color: $dark-bg
+	.main-container
+		+media(600)
+       		padding: 0		
 	&-col
 		padding: 80px 0
 		width: 33.3333333%
 		float: left
-		text-align: center			
+		text-align: center
 		&:nth-child(2n+1)
-			background-color: #1e292f;
-
+			background-color: #1e292f
+		+media(600)
+       		width: 100%
+       		padding: 50px 0 50px 0		
+		
 .count__strong
 	font-size: 30px
 	color: $white-color
@@ -54,6 +73,8 @@
 	padding: 95px 0 125px 0
 	background-size: cover
 	background-position: 50% 50%
+	+media(767)
+       	padding: 50px 0 50px 0
 	.sub-title
 		color: $white-color
 	p
@@ -114,14 +135,68 @@
 		float: left
 		width: 33.333333%
 		font-size: 16px
-	h2:after
-		content: url('../pic/separator.png')
-		position: absolute
-		top: 25px
-		left: 0
+		+media(767)
+       		width: 50%
+       		+media(480)
+       			width: 100%
+    	
+.logo-contact
+	.sub-title
+		text-align: left
+	.sub-title.decoration:after
+		left: 15px;
+		+media(767)
+       		left: 50%
+       		transform: translateX(-50%)	
 			
 .contact__descr
 	font-size: 14px
 	font-weight: 400
 	line-height: 24px
-		
+
+.logo-contact
+	+media(767)
+    	display: none
+
+.social__list
+	text-align: center
+	+media(480)
+       	margin-bottom: 50px
+	li
+		display: inline-block
+		padding: 0 10px
+
+.map-text
+	text-align: right
+	+media(767)
+       	text-align: center
+	.sub-title
+		text-align: right
+		+media(767)
+       		text-align: center
+	.sub-title.decoration:after
+		left: 100%;
+		transform: translateX(-100%);
+		+media(767)
+       		left: 50%
+       		transform: translateX(-50%)
+
+.contact__descr-holder
+	float: right
+	+media(767)
+       	float: none
+
+.footer__copyrights
+	padding: 25px 0
+	background-color: #1e292f
+	text-align: center
+	font-size: 14px
+	font-weight: 600
+	line-height: 36px
+	text-transform: uppercase
+	color: $white-color
+	font-weight: bold
+	span
+		display: inline-block
+		color: $blue-color
+

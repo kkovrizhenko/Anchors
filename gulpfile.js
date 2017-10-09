@@ -8,7 +8,8 @@ var gulp 			= require('gulp'),
 	autoprefixer 	= require('gulp-autoprefixer'),
 	sourcemaps 		= require('gulp-sourcemaps'),
 	browserSync 	= require('browser-sync'),
-	spritesmith 	= require('gulp.spritesmith');
+	spritesmith 	= require('gulp.spritesmith'),
+	del 			= require('del');
 
 gulp.task('template', function() {
 	gulp.src('./templates/index.html')
@@ -22,8 +23,9 @@ gulp.task('template', function() {
 
 gulp.task('sass', function(){
 	return gulp.src(['./sass/**/*.scss', './sass/**/*.sass'])
+	.pipe(sourcemaps.init())
 	.pipe(sass())
-	.pipe(autoprefixer(['last 15 versions'], {cascade: true}))
+	.pipe(autoprefixer(['last 15 versions'], {cascade: false}))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('./css/'))
 	.pipe(browserSync.reload({stream: true}))
@@ -62,6 +64,10 @@ gulp.task('sprite', () => {
     let cssStream = spriteData.css.pipe(gulp.dest('sass/'));
 
     return merge(imgStream, cssStream);
+});
+
+gulp.task('clean', function(){
+	return del.sync('./index.html');
 });
 
 gulp.task('watch', ['browser-sync', 'template', 'sass', 'styles'], function(){
