@@ -70,7 +70,16 @@
 		max-width: 1400px
 		margin: 0 auto
 		padding: 0 15px
-		
+
+		.icon-box 
+ 			width: 50%
+ 			display: inline-block
+
+ 			+media(1280)
+				width: 100%
+				text-align: center
+				margin-bottom: 5px
+
 		@extend .clearfix
 
 		+media(979) 
@@ -143,10 +152,6 @@
 
 	.icon 
 		margin-right: 20px
-
-		&-box 
- 			width: 50%
- 			display: inline-block
  	
 .icon-monitor::before 
 	content: url('../pic/monitor.png') 
@@ -173,7 +178,7 @@
 	padding: 17px 45px 17px 35px
 
 	&::after 
-		content: url('../pic/arrow.png')
+		content: url('../pic/sprite/arrow.png')
 		width: 8px
 		height: 12px
 		position: absolute
@@ -217,7 +222,7 @@
 	
 	&::after 
 		content: ''
-		background: url('../pic/separator.png')
+		background: url('../pic/sprite/separator.png')
 		width: 31px
 		height: 6px
 		position: absolute
@@ -269,10 +274,4 @@
 
 	.decoration:after 
 		top: 110%
-
-.icon-box 
-	+media(1280) 
-		width: 100%
-	 	text-align: center
-	 	margin-bottom: 5px
 	
