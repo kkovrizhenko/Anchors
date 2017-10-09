@@ -135,13 +135,17 @@
 		float: left
 		width: 33.333333%
 		font-size: 16px
-<<<<<<< HEAD
-		+media(767)
-       		width: 50%
-       		+media(480)
-       			width: 100%
+	+media(767)
+       	width: 50%
+       	+media(480)
+       		width: 100%
     	
 .logo-contact
+	h2:after
+		content: url('../pic/sprite/separator.png')
+		position: absolute
+		top: 25px
+		left: 0
 	.sub-title
 		text-align: left
 	.sub-title.decoration:after
@@ -149,13 +153,8 @@
 		+media(767)
        		left: 50%
        		transform: translateX(-50%)	
-=======
-	h2:after
-		content: url('../pic/sprite/separator.png')
-		position: absolute
-		top: 25px
-		left: 0
->>>>>>> 879b5e99cc890165ce38d5920d2e58416a5efc29
+	
+
 			
 .contact__descr
 	font-size: 14px
@@ -180,8 +179,8 @@
        	text-align: center
 	.sub-title
 		text-align: right
-		+media(767)
-       		text-align: center
+	+media(767)
+       	text-align: center
 	.sub-title.decoration:after
 		left: 100%;
 		transform: translateX(-100%);
