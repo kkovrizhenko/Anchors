@@ -75,6 +75,11 @@
  			width: 50%
  			display: inline-block
 		
+			+media(1280)
+				width: 100%
+				text-align: center
+				margin-bottom: 5px
+
 		@extend .clearfix
 
 		+media(979) 
@@ -269,10 +274,4 @@
 
 	.decoration:after 
 		top: 110%
-
-.icon-box 
-	+media(1280) 
-		width: 100%
-	 	text-align: center
-	 	margin-bottom: 5px
 	
