@@ -133,10 +133,10 @@
 		float: left
 		width: 33.333333%
 		font-size: 16px
-	+media(767)
-       	width: 50%
-       	+media(480)
-       		width: 100%
+		+media(767)
+       		width: 50%
+       		+media(480)
+       			width: 100%
     	
 .logo-contact
 	h2:after
@@ -146,6 +146,8 @@
 		left: 0
 	.sub-title
 		text-align: left
+		+media(767)
+       		text-align: center
 	.sub-title.decoration:after
 		left: 15px;
 		+media(767)
@@ -177,8 +179,8 @@
        	text-align: center
 	.sub-title
 		text-align: right
-	+media(767)
-       	text-align: center
+		+media(767)
+       		text-align: center
 	.sub-title.decoration:after
 		left: 100%;
 		transform: translateX(-100%);
@@ -201,7 +203,9 @@
 	text-transform: uppercase
 	color: $white-color
 	font-weight: bold
+	+media(767)
+    	paddig: 25px 15px	
 	span
 		display: inline-block
 		color: $blue-color
-
+	
